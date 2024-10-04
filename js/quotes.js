@@ -43,8 +43,7 @@ const quotes = [
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
+const todaysQuote = (quotes[Math.floor(Math.random()*quotes.length)]); //명언과 저자들이 담긴 quotes에서 하나 선택
 
-const todaysQuote = (quotes[Math.floor(Math.random()*quotes.length)]);
-
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.quote; //todaysQuote안의 quote출력
+author.innerText = todaysQuote.author; //todaysQuote안의 author출력
